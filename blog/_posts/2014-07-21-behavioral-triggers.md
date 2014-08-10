@@ -3,7 +3,7 @@ layout: post
 title: Behavioral triggers of monetization
 ---
 
-<a href="https://dribbble.com/shots/258976-Ocelot" target="_blank"><img class="wp-image-57 size-medium alignright" style="margin:2px;border:none;" src="https://patternsoffun.files.wordpress.com/2014/07/ocelot.png?w=300" alt="ocelot" width="300" height="225" /></a>
+<a href="https://dribbble.com/shots/258976-Ocelot" target="_blank">![Triggers](/images/ocelot.png)</a>
 
 Monetization was always one of my weakest spots. How many times have I made a game good enough to gain user traction but that was lacking this critical component. And how often it led to a devastating results. So I decided to take time and reflect on this topic, starting from behavioral mechanisms to structural elements and specific realizations. And instead of speculating in the abstract, I want to discuss only the cases proven by me or one of my friends (and by that I mean that one of us paid real money in a specific case). The aim is to bruteforce the problem and to go through some interesting and important cases in order to find the psychological foundation for player spends.
 

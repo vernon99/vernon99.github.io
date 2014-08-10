@@ -3,7 +3,7 @@ layout: post
 title: Candy Crash Saga monetization
 ---
 
-<img class="alignnone size-large wp-image-51" src="http://patternsoffun.files.wordpress.com/2014/07/ccs.jpg?w=584" alt="ccs" width="584" height="365" />
+![Candy Crash Saga](/images/ccs.jpg)
 
 There's not too much to be added about Candy Crash Saga at this point. However, a few days ago I discovered a whale among my friends who reached the last available level in the game (and it’s something about 400, for a second). And as whales make hundreds of transactions each, that’s a lot of data to analyze. A single whale could show you how the entire game monetizes. The whole money-sink distribution could be built upon one user. Isn’t that cool? So, keeping in mind the limited accuracy, let’s take a look.
 

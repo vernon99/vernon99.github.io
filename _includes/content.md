@@ -12,7 +12,7 @@
   <h1>Github forks</h1>
   <ul class="posts">
     {% for repo in site.github.public_repositories %}
-      {% if {{ repo.fork }} %}
+      {% if repo.fork %}
         <li><b>{{ repo.name }}.</b> {{ repo.description }}<br/> &raquo; <a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
       {% endif %}
     {% endfor %}

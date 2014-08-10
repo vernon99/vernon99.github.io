@@ -7,15 +7,10 @@
     {% for repo in site.github.public_repositories %}
       {% if repo.fork %}
       {% else %}
-        <li>
-        <span>{{ repo.created_at | date_to_string }}</span> &raquo;
-        <b>{{ repo.name }}.</b> {{ repo.description }}.<br>
-        <a href="{{ repo.html_url }}">{{ repo.html_url }}</a><br/>
-        Written on
-        {% for k, v in repo.languages_url %}
-    		
-		{% endfor %}
-        Watchers: <b>{{repo.watchers_count}}</b>. </li>
+        <li><span>{{ repo.created_at | date_to_string }}</span> &raquo;
+        <b>{{ repo.name }}.</b> {{ repo.description }}.<br/>
+        <a href="{{ repo.html_url }}">{{ repo.html_url }}</a>
+        Written mostly on {{repo.language}}, {{repo.watchers_count}} watchers. </li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -24,7 +19,9 @@
   <ul class="repos">
     {% for repo in site.github.public_repositories %}
       {% if repo.fork %}
-        <li><b>{{ repo.name }}.</b> {{ repo.description }} &raquo; <a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
+        <li><span>{{ repo.created_at | date_to_string }}</span> &raquo;
+        <b>{{ repo.name }}.</b> {{ repo.description }}.<br/>;
+        <a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

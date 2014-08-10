@@ -20,9 +20,11 @@ weight: 1
     {% for repo in site.github.public_repositories %}
       {% if repo.fork %}
       {% else %}
-        <!--<li><span>{{ repo.created_at | date_to_string }}</span> &raquo;--!>
+        <li>
+        <!--<span>{{ repo.created_at | date_to_string }}</span> &raquo;--!>
         <a href="{{ repo.html_url }}">{{ repo.name }}</a>. {{ repo.description }}.<br/>
-        Written mostly on {{repo.language}}, {{repo.watchers_count}} watchers. </li>
+        Written mostly on {{repo.language}}, {{repo.watchers_count}} watchers.
+        </li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -31,8 +33,10 @@ weight: 1
   <ul class="repos">
     {% for repo in site.github.public_repositories %}
       {% if repo.fork %}
-        <!--<li><span>{{ repo.created_at | date_to_string }}</span> &raquo;*/--!>
-        <a href="{{ repo.html_url }}">{{ repo.name }}</a>. {{ repo.description }}.<br/></li>
+        <li>
+        <!--<span>{{ repo.created_at | date_to_string }}</span> &raquo;*/--!>
+        <a href="{{ repo.html_url }}">{{ repo.name }}</a>. {{ repo.description }}.<br/>
+        </li>
       {% endif %}
     {% endfor %}
   </ul>

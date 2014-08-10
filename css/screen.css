@@ -57,12 +57,12 @@ table {
 /*
 /*****************************************************************************/
 
-ul.posts {
-  list-style-type: none;
+ul.repos {
+  list-style-type: circle;
   margin-bottom: 2em;
 }
 
-  ul.posts li {
+  ul.repos li {
     line-height: 1.75em;
   }
 

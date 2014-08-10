@@ -11,9 +11,7 @@
         <span>{{ repo.created_at | date_to_string }}</span> &raquo;
         <b>{{ repo.name }}.</b> {{ repo.description }}. <a href="{{ repo.html_url }}">{{ repo.html_url }}</a><br/>
         Written on
-        {% for k, v in repo.languages_url %}
-    		{{ k }};
-		{% endfor %}
+        
         Watchers: <b>{{repo.watchers_count}}</b>. </li>
       {% endif %}
     {% endfor %}

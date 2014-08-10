@@ -1,2 +1,23 @@
-markdown: rdiscount
-pygments: true
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Mikhail Larionov
+tagline:          'Personal profile'
+description:      'My name is Mikhail Larionov, I program, write and do some other things in my spare time.'
+url:              http://vernon99.github.io
+baseurl:          /
+
+author:
+  name:           'Mikhail Larionov'
+  url:            https://twitter.com/vernon99
+
+paginate:         5
+paginate_path:    "blog/page:num"
+
+# Custom vars
+version:          2.1.0

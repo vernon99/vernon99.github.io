@@ -1,0 +1,35 @@
+---
+layout: post
+title: Retention and competition cycles in Boom Beach
+---
+
+<img class="alignnone wp-image-48 size-full" src="https://patternsoffun.files.wordpress.com/2014/07/boombeach.jpg" alt="Boom Beach" width="519" height="296" />
+
+I’ve been playing Boom Beach a lot over the past few weeks, and have progressed to level 32 with about $100 of in-game purchases. At this point I think that the game has one of the best monetization and retention mechanisms I’ve ever seen. I won’t try to repeat the great job Mikhail Katkoff has done in <a href="http://www.deconstructoroffun.com/2014/01/boom-beach-developing-of-next-big-thing.html" target="_blank">his overview </a>of the game, but I would like to share a few thoughts on these two components of the game design and how they’re supported by competition.
+
+### Retention
+There are three main activities in Boom Beach: building, army training, and attacking enemy bases. Two complementary loops occur within this structure that drive short-term and mid-term retention.
+
+**Short-term retention** is achieved by very quick iterations of unit construction — 5 to 30 minutes for early-to-mid level. There are several building queues (one for each boat that you have), but as most of the soldiers need to be kept ready for battle, these lines essentially work together as a single queue with many simultaneous timers. (As a side note, if I tried to replicate these mechanics, I’d probably eliminate multiple timers for the army queue.) When the army is ready it’s time to go fighting. Unlike Clash of Clans, soldiers that are still alive at the end of the battle are retained. This aspect of the competition makes a lot more sense, as it rewards clever play and emphasizes the importance of skill. Often it’s possible to play 3-5 battles in a row—first with AI, as these are easier, and then with other players—without having to go through a replenishment cycle to get more troops. Successful battles are rewarded with resources and minor bonuses such as victory points and shards—elements of leaderboard mechanics and crafting. The whole cycle is basically the battling loop that drives the short-term retention with quick iterations and great rewards.
+
+As the player advances through the game it becomes clear that every minute not spent building is a waste of game time, as it gives competitors the chance to level up more quickly. This is another way that Boom Beach differs from CoC. In CoC there are two default workers, with the option to buy up to three more for hard currency. What these purchasable workers do in CoC is provide shortcuts for game progress. However, as construction acceleration is another, and more important, revenue channel built on top of game progress, these shortcuts cannibalize it. As an example, in CoC, a player buys one additional worker that allows him or her to build X more buildings over the course of the game. It’s a one-time payment. In Boom Beach the player accelerates construction Y times, which is less than X, but more than 1 on average.
+
+The single construction queue also achieves in focusing the player’s attention on completing one building at a time. When you have more than one building in progress, it’s more difficult to track if you have available workers, as well as to remember the time left to complete the next one. With only one building in construction each time, you become really anxious when you realize that you forgot to start a new construction on time. It’s difficult to underestimate the effect of this mechanic on<strong> mid-term retention</strong>. Half of the times I opened the app just to check if my previous construction was complete and if I could start a new one.
+
+<img id="i-24" class="size-full wp-image aligncenter" src="http://patternsoffun.files.wordpress.com/2014/04/boombeach-retention.png?w=650" alt="Image" />
+<h6 style="text-align:center;">Boom Beach retention loops<br/>Note: durations are for early to mid-game</h6>
+
+### Competition
+While it’s widely known that the success of both Clash of Clans and Boom Beach stems from their PvP modes, I would like to highlight the wavelike pattern of competition for paying players. I don’t really know how miserable life is for non-paying users, as I paid from the start, but I assume the pattern will probably be flatter, as it counts only the play time, not the expense, for these players.
+
+The following opinions are based on observation and speculation, so take them with a grain of salt. Probably I have discovered certain aspects of gameplay that are obvious for an experienced PvP gamer or developer. Anyway. Based on my own experience, it seems that PvP difficulty catches up with player progress following each major breakthrough, often enabled by purchasing items. Initially, opponents don’t put any real pressure on the player. Then, after a while, battles are commonly lost and bases are raided more often. At this point, the player starts to feel like he or she is falling behind, even if this is just a trick of the match-making system. This drives players to pay for items that allow them to upgrade buildings, thus improving army and defense strength. I’m not sure if the match-making system starts supplying weaker opponents at this point or this is just the result of player's rank not matching his improved strength, but in any case the goal is achieved.
+
+After upgrading, the player feels empowered, smashing opponents and wiping out the entire available region of map. However, this triumphant feeling fades away rather quickly in the next 1-2 days, as opponents’ power again increases to the point where the player can’t easily win. Then the win-lose cycle repeats. The blue and red lines on the chart demonstrate how this works.
+
+<img id="i-25" class="size-full wp-image aligncenter" src="http://patternsoffun.files.wordpress.com/2014/04/boombeach-competition.png?w=650" alt="Image" />
+<h6 style="text-align:center;">Boom Beach competition curve</h6>
+This cycle is effective because of one very important thing: A player almost never fights the same opponent twice. The range of opponents is very flexible. And the match-making system provides the best enemies based on current performance, not players’ personal preferences or history of confrontations.
+
+The green line on the chart depicts the role of the PvE (non-player) enemies, which essentially serve as cannon fodder. Their purpose is to increase the number of wins (50% on average in PvP games), even though these wins are not over real players. They also distinguish between tough battles with players (like boss battles) and common battles with mobs. They don’t offer much challenge and progress, but can provide a boost for non-paying users or for paying users who are falling behind.
+
+All in all, great job Supercell! Boom Beach is a real breakthrough from Clash of Clans in many ways. Some improvements could be made, including adding a clan system and social interactions, but the game is still in it's early days so let's wait and see.

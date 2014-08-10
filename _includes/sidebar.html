@@ -1,0 +1,37 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h2>
+        <a href="{{ site.baseurl }}">
+          Welcome
+        </a>
+      </h2>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      {% assign pages_list = site.pages | sort: 'weight' %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      <p><p>
+      Find me on:<br/>
+      <a class="sidebar-nav-item" href="http://github.com/vernon99">Github</a>
+      <a class="sidebar-nav-item" href="http://facebook.com/michael.larionov/">Facebook</a>
+      <a class="sidebar-nav-item" href="http://twitter.com/vernon99">Twitter</a>
+      <a class="sidebar-nav-item" href="http://instagram.com/vernon99">Instagram</a>
+      <a class="sidebar-nav-item" href="https://www.linkedin.com/profile/view?id=36297720">Linkedin</a>
+      
+    </nav>
+    
+    <p>
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p>Created using <a href="https://github.com/poole/hyde" target="_blank">Hyde</a> for Jekyll.
+  </div>
+</div>

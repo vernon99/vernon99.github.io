@@ -1,6 +1,31 @@
 ---
-layout: default
-title: Mikhail Larionov
+layout: page
+title: Projects and background
+weight: 1
 ---
 
-{% include content.md %}
+<div id="home">
+
+  <h1>Github projects</h1>
+  <ul class="repos">
+    {% for repo in site.github.public_repositories %}
+      {% if repo.fork %}
+      {% else %}
+        <li><span>{{ repo.created_at | date_to_string }}</span> &raquo;
+        <a href="{{ repo.html_url }}">{{ repo.name }}</a>. {{ repo.description }}.<br/>
+        Written mostly on {{repo.language}}, {{repo.watchers_count}} watchers. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  
+  <h1>Github forks</h1>
+  <ul class="repos">
+    {% for repo in site.github.public_repositories %}
+      {% if repo.fork %}
+        <li><span>{{ repo.created_at | date_to_string }}</span> &raquo;
+        <a href="{{ repo.html_url }}">{{ repo.name }}</a>. {{ repo.description }}.<br/></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</div>

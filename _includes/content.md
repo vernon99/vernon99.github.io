@@ -5,7 +5,8 @@
   <h1>Github projects</h1>
   <ul class="posts">
     {% for repo in site.github.public_repositories %}
-      {% if ! repo.fork %}
+      {% if repo.fork %}
+      {% else %}
         <li><b>{{ repo.name }}.</b> {{ repo.description }}<br/> &raquo; <a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
       {% endif %}
     {% endfor %}

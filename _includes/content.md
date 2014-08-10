@@ -11,7 +11,7 @@
   
     <ul class="posts">
     {% for repo in site.github.public_repositories %}
-      <li><b>repo</li>
+      <li><b>{{repo}}</li>
     {% endfor %}
   </ul>
 

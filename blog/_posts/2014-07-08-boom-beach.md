@@ -3,7 +3,7 @@ layout: post
 title: Retention and competition cycles in Boom Beach
 ---
 
-![Boom Beach](/images/boombeach.jpg)
+![Boom Beach](http://vernon99.gihub.io/images/boombeach.jpg)
 
 I’ve been playing Boom Beach a lot over the past few weeks, and have progressed to level 32 with about $100 of in-game purchases. At this point I think that the game has one of the best monetization and retention mechanisms I’ve ever seen. I won’t try to repeat the great job Mikhail Katkoff has done in <a href="http://www.deconstructoroffun.com/2014/01/boom-beach-developing-of-next-big-thing.html" target="_blank">his overview </a>of the game, but I would like to share a few thoughts on these two components of the game design and how they’re supported by competition.
 
@@ -16,7 +16,7 @@ As the player advances through the game it becomes clear that every minute not s
 
 The single construction queue also achieves in focusing the player’s attention on completing one building at a time. When you have more than one building in progress, it’s more difficult to track if you have available workers, as well as to remember the time left to complete the next one. With only one building in construction each time, you become really anxious when you realize that you forgot to start a new construction on time. It’s difficult to underestimate the effect of this mechanic on<strong> mid-term retention</strong>. Half of the times I opened the app just to check if my previous construction was complete and if I could start a new one.
 
-<img id="i-24" class="size-full wp-image aligncenter" src="/images/bbretention.png" alt="Image" />
+<img id="i-24" class="size-full wp-image aligncenter" src="http://vernon99.gihub.io/images/bbretention.png" alt="Image" />
 <h6 style="text-align:center;">Boom Beach retention loops<br/>Note: durations are for early to mid-game</h6>
 
 ### Competition
@@ -26,7 +26,7 @@ The following opinions are based on observation and speculation, so take them wi
 
 After upgrading, the player feels empowered, smashing opponents and wiping out the entire available region of map. However, this triumphant feeling fades away rather quickly in the next 1-2 days, as opponents’ power again increases to the point where the player can’t easily win. Then the win-lose cycle repeats. The blue and red lines on the chart demonstrate how this works.
 
-<img id="i-25" class="size-full wp-image aligncenter" src="/images/bbcompetition.png" alt="Image" />
+<img id="i-25" class="size-full wp-image aligncenter" src="http://vernon99.gihub.io/images/bbcompetition.png" alt="Image" />
 <h6 style="text-align:center;">Boom Beach competition curve</h6>
 This cycle is effective because of one very important thing: A player almost never fights the same opponent twice. The range of opponents is very flexible. And the match-making system provides the best enemies based on current performance, not players’ personal preferences or history of confrontations.
 

@@ -1,0 +1,51 @@
+---
+layout: page
+title: For recruiters
+weight: 3
+---
+
+<div id="home">
+
+  This section is created to save your and your engineers time.<br/>
+  Will appreciate if you'll read it before interviewing me.<p>
+
+  <h2 class="post-title">For recruiters</h2>
+  <ul class="answers">
+    <li> Right now I'm working in San Francisco for Lost and Found Games, developing iOS games using native stack (UIKit, CoreAnimation, CoreData, CFNetwork). Our first game is still in geo-locked beta.
+    <li> Before that I spent some time working on <a href="http://www.virry.tv">Virry.tv</a>, iPad entertainment hub built around video streams and recorded videos
+    <li> Worked as product lead at Disney Online Games for two years
+    <li> 10 years of combined product and game development experience
+    <li> Managed teams of up to 20 engineers and designers
+    <li> Got Master of Computer Science degree in Russia
+  </ul>
+  
+  <h2 class="post-title">For tech folks</h2>
+  Overview:
+  <ul class="answers">  
+	  <li> 1.5 years of development for iOS using Objective C
+	  <li> 3 more years of development on C++ for Windows, Palm OS, Pocket PC
+	  <li> Some limited experience with Python (Twisted framework), JavaScript (Parse Cloud), ActionScript (Flash), Swift
+	  <li> Worked with several schemaless such as CouchDB and MongoDB, wrote Map/Reduce calls on Erlang
+	  <li> Worked with 3rd party analytics: Flurry, Google Analytics, Game Analytics (see my custom GA dashboard <a href="https://github.com/vernon99/Gamp">Gamp</a>) and proprietary systems such as Playdom BI
+	  <li> I use Github, CocoaPods and in some cases Github extensions
+  </ul>
+
+  <h2 class="post-title">FAQ: Objective C</h2>
+  <ul class="answers">
+  <li> <b>Protocol</b> is an abstract interface without implementation that could be used to tell others that some class has some specific methods (conforms to the protocol)
+  <li> <b>Category</b> is a set of methods that extends some existing class. As there're no way to declare protected and private methods in Objective C, category could be used to emulate protected mechanism by declaring methods in a separate header file. Extensions in turn are nameless categories that allow you to change <i>main</i> implementation of the class (override it without creating a subclass). Unlike categories, they allow you to add extra instance variables. Extensions also can be used to emulate private methods.
+  <li> <b>Block</b> is an anonymous function that may contain snapshot of variables stored in stack or heap. Good for callbacks and any other cases where it's useful to have captured state of data for a moment the block was created. Blocks retain objects that are used in their scope.
+  <li> <b>Retain loop</b> is a situation where two (or more) objects are retaining each other thus preventing everybody from been deallocated. For example, creating block for self that uses self inside will result in retain loop as block will retain self and self will retain block. Could be solved with __weak (in ARC) declaration of a pointer to self or by nillifying the block after the execution.
+  <li> <b>Method swizzling</b> is a way to intersect specific class method and replace it with some other method. It is achieved by creating a category that implements a class method +load, which replaces class method with a new one in a dispatch_once block. See more details on the matter <a href="http://nshipster.com/method-swizzling/">here</a>.
+  <li> The difference between <b>dispatch_async</b>, <b>NSOperationQueue</b> and <b>NSThread</b>. NSThread is historically a pre-GCD (Grand Central Dispatch) concept that allows to manually create and execute threads. By contrast GCD automatically creates and maintains four concurrent dispatch queues (three prior to iOS 5) optimizing load on all available processor cores. Unlike GCD, active threads can actually compete for processor time (say, if there're 100 threads running simultaneously) decreasing overal effectiveness. NSOperation is built on top of GCD and gives you a higher level of abstraction and some additional features like bandwidth-constrained queues that only run N-operations at a time as well as establishing dependencies between operations. Summing up, for simple cases it's fine to use pure GCD, NSOperationQueues are useful for complex parallel processing and it's recommended to use any of them over NSThread.
+  </ul>
+  <!--><div class="message">Also, I would really appreciate if you won't ask me to implement linked list or recursion (50% of companies ask about one or another), here's an <a href="xxx">example</a> I created on such purpose if you still need it for some formal reason. Creating custom UITableView or UIScrollView also became a tiresome exercise by now (with 30% companies asking about it during an interview), but here's <a href="xxx">another example</a> if you're interested.</div><--!>
+  
+  <h2 class="post-title">A bit of self-criticism</h2>
+  <ul class="answers">
+  <li>I stutter a little when nervous, but normally it's not that bad
+  <li>Can be very straightforward if I feel the need
+  <li>Have Russian roots with all the consequences including an accent and some cultural differences. Don't like Pasternak and Bulgakov, prefer Tolstoy. But Donna Tartt touches some strings too as well as Pink Floyd and Mark Ronson.
+  </ul>
+    
+</div>

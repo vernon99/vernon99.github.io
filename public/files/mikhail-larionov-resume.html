@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikhail Larionov Resume</title>
+  <style>
+    :root {
+      --ink: #18212f;
+      --muted: #5d6978;
+      --soft: #f5f8f7;
+      --rule: #dde5e4;
+      --accent: #2f5f5b;
+      --accent-2: #7d5d3f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #edf1f3;
+      color: var(--ink);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 10.2pt;
+      line-height: 1.42;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .sheet {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      padding: 0.52in 0.58in 0.58in;
+      background: #fff;
+      box-shadow: 0 20px 56px rgba(24, 33, 47, 0.14);
+    }
+
+    header {
+      margin: -0.12in -0.12in 0.32in;
+      padding: 0.32in 0.34in 0.28in;
+      border: 1px solid #dce7e5;
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #101722;
+      font-size: 34pt;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 0.95;
+    }
+
+    .tagline {
+      max-width: 6.4in;
+      margin: 0;
+      color: #2e3947;
+      font-size: 13pt;
+      line-height: 1.28;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 11px;
+      margin: 18px 0 0;
+      padding: 0;
+      color: var(--muted);
+      font-size: 9.2pt;
+      list-style: none;
+    }
+
+    .contact li:first-child {
+      flex-basis: auto;
+    }
+
+    .contact li:first-child::after {
+      content: "";
+    }
+
+    .contact li:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin-left: 11px;
+      border-radius: 50%;
+      background: #aab6b3;
+      vertical-align: middle;
+    }
+
+    main {
+      padding-top: 0;
+    }
+
+    section {
+      margin-top: 0.34in;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    section:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 0.14in;
+      padding-bottom: 0.07in;
+      border-bottom: 1px solid var(--rule);
+      color: #202b3a;
+      font-size: 13pt;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.1;
+      text-transform: none;
+    }
+
+    h2::after {
+      content: none;
+    }
+
+    h3 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      column-gap: 18px;
+      align-items: baseline;
+      margin: 0.2in 0 2px;
+      color: #111827;
+      font-size: 12.2pt;
+      line-height: 1.18;
+      break-after: avoid;
+    }
+
+    h2 + h3 {
+      margin-top: 0;
+    }
+
+    h3 .org {
+      font-weight: 700;
+    }
+
+    h3 .role {
+      color: #435063;
+      font-size: 9.5pt;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    p {
+      margin: 0 0 0.08in;
+    }
+
+    .date-line {
+      margin-bottom: 0.06in;
+      color: var(--accent);
+      font-size: 9.2pt;
+      font-weight: 700;
+      break-after: avoid;
+    }
+
+    ul {
+      margin: 0.06in 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 0 0 0.055in;
+      padding-left: 3px;
+    }
+
+    li::marker {
+      color: var(--accent);
+      font-size: 0.86em;
+    }
+
+    a {
+      color: #315e5b;
+      text-decoration: none;
+    }
+
+    code {
+      padding: 0 2px;
+      border-radius: 3px;
+      background: var(--soft);
+      color: #17212b;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+    }
+
+    .section-summary p {
+      color: #1f2937;
+      font-size: 11.1pt;
+      line-height: 1.38;
+    }
+
+    .section-selected-achievements ul,
+    .section-patents ul,
+    .section-skills ul,
+    .section-writing-and-public-work ul,
+    .section-additional ul {
+      margin-top: 2px;
+    }
+
+    .section-experience h3 {
+      padding-top: 0.02in;
+      border-top: 1px solid #edf1f2;
+    }
+
+    .section-experience h2 + h3 {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .section-selected-achievements,
+    .section-patents,
+    .section-skills,
+    .section-writing-and-public-work,
+    .section-education,
+    .section-additional {
+      font-size: 9.65pt;
+      line-height: 1.35;
+    }
+
+    .section-skills li {
+      margin-bottom: 0.06in;
+    }
+
+    .section-selected-achievements {
+      break-before: auto;
+    }
+
+    .section-patents {
+      break-before: page;
+    }
+
+    @media print {
+      @page {
+        size: Letter;
+        margin: 0.5in 0.56in 0.56in;
+      }
+
+      html {
+        background: #fff;
+        font-size: 10.2pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .sheet {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      header {
+        margin: 0 0 0.3in;
+      }
+
+      h3,
+      .date-line,
+      li {
+        break-inside: avoid;
+      }
+
+      a {
+        color: #315e5b;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <header>
+      <h1>Mikhail Larionov</h1>
+      <p class="tagline">Founder, product leader, and engineering leader building AI-native creator tools, social platforms, developer services, and games.</p>
+      <ul class="contact">
+        <li>San Francisco, CA</li>
+        <li><a href="https://www.linkedin.com/in/vernon99/">LinkedIn</a></li>
+        <li><a href="https://github.com/vernon99">GitHub</a></li>
+        <li><a href="https://medium.com/@vernon99">Medium</a></li>
+        <li><a href="https://vernon99.github.io/blog/">Game Design Blog</a></li>
+      </ul>
+    </header>
+    <main>
+    <section class="section-summary">
+      <h2>Summary</h2>
+      <p>Product and engineering leader with deep experience across AI-native creation tools, social and community platforms, developer ecosystems, and games. Founded PeerBoard, grew it into an enterprise community platform, and sold it to Docebo. Previously led Messenger Platform engineering at Meta from inception through public launch and worked on social games at Disney Interactive. Earlier career includes founding and shipping games, writing game technology from scratch, and building creator-oriented products where better tools unlock new classes of users.</p>
+    </section>
+    <section class="section-experience">
+      <h2>Experience</h2>
+      <h3><span class="org">Sentifold</span><span class="role">Founder</span></h3>
+      <p class="date-line">2026 - Present</p>
+      <ul>
+        <li>Building an AI-native game creation platform focused on removing the technical barriers between creative intent and playable games.</li>
+        <li>Developing a product thesis around agentic game creation, AI-generated logic and assets, and multi-agent orchestration for interactive experiences.</li>
+        <li>Publishing public analysis on why legacy game engines and AI plugins do not yet solve the accessibility gap for game creators.</li>
+      </ul>
+      <h3><span class="org">PeerBoard</span><span class="role">Founder, CEO</span></h3>
+      <p class="date-line">2019 - 2023</p>
+      <ul>
+        <li>Founded PeerBoard, a plug-and-play community-as-a-service platform for embedding branded communities directly into websites, products, and learning experiences.</li>
+        <li>Built the product around deep integrations, including WordPress, custom web environments, SDK/API capabilities, and components for modern developer stacks.</li>
+        <li>Grew the company from early product development through funding, launch, enterprise adoption, and acquisition by Docebo in April 2023.</li>
+        <li>Led product, engineering, positioning, and go-to-market for a community platform designed around knowledge sharing, customer education, and social learning.</li>
+        <li>Drove a Product Hunt launch that reached top daily rankings and documented the launch process publicly for other founders.</li>
+      </ul>
+      <h3><span class="org">Docebo</span><span class="role">Product Leadership, Community Products</span></h3>
+      <p class="date-line">2023 - 2025, post-acquisition</p>
+      <ul>
+        <li>Joined Docebo after the PeerBoard acquisition to oversee community products and continue the PeerBoard mission inside Docebo's learning platform.</li>
+        <li>Helped bring native community management and social learning capabilities into an enterprise learning product used for customer, partner, member, franchise, and employee education.</li>
+        <li>Worked through post-acquisition product integration, positioning, and platform strategy for community-led learning.</li>
+      </ul>
+      <h3><span class="org">Meta / Facebook Messenger</span><span class="role">Engineering Manager, Messenger Platform</span></h3>
+      <p class="date-line">2014 - 2018</p>
+      <ul>
+        <li>Led Messenger Platform engineering from inception through public launch at F8 2016 and later platform versions.</li>
+        <li>Helped launch early commerce on Facebook Messenger and build platform infrastructure used by the broader bot and messaging ecosystem.</li>
+        <li>Worked at the intersection of developer platforms, messaging UX, commerce, identity, webviews, and partner integrations.</li>
+        <li>Published product and developer guidance on Messenger bot UX patterns, including decision trees, webviews, and the Messenger Extension SDK.</li>
+      </ul>
+      <h3><span class="org">Disney Interactive</span><span class="role">Product Lead, Social Games</span></h3>
+      <p class="date-line">2011 - 2014</p>
+      <ul>
+        <li>Led product work on social games, combining game design, monetization, engagement loops, and analytics.</li>
+        <li>Built experience across free-to-play game mechanics, retention, monetization systems, and social product design.</li>
+        <li>Developed public game design analysis on LTV, retention, competition loops, and monetization psychology.</li>
+      </ul>
+      <h3><span class="org">Early Career</span><span class="role">Game Founder, Product and Engineering</span></h3>
+      <p class="date-line">Pre-2011</p>
+      <ul>
+        <li>Started making games at 17, including writing a custom 3D engine from scratch and shipping roughly 20 games, both solo and through my own game company.</li>
+        <li>Worked across engineering, product management, and game development before moving into larger consumer and platform products.</li>
+      </ul>
+    </section>
+    <section class="section-selected-achievements">
+      <h2>Selected Achievements</h2>
+      <ul>
+        <li>Founded PeerBoard and led it through acquisition by Docebo in 2023.</li>
+        <li>Led Messenger Platform engineering from inception to F8 2016 public launch.</li>
+        <li>Helped launch early commerce on Facebook Messenger.</li>
+        <li>Built and shipped products across social gaming, messaging platforms, community platforms, developer tools, and AI-native game creation.</li>
+        <li>Authored public analysis on community building, Product Hunt launches, Messenger bot UX, game monetization, retention loops, and AI-native game development.</li>
+      </ul>
+    </section>
+    <section class="section-patents">
+      <h2>Patents</h2>
+      <p>Co-inventor on granted U.S. patents assigned to Facebook / Meta across Messenger Platform, messaging bots, business messaging, bot ranking, and messaging policy enforcement:</p>
+      <ul>
+        <li><a href="https://patents.google.com/patent/US10567312B2/en">US 10,567,312 B2</a>, <a href="https://patents.google.com/patent/US11018999B1/en">US 11,018,999 B1</a>, and <a href="https://patents.google.com/patent/US11552910B1/en">US 11,552,910 B1</a> - Techniques for messaging bot controls based on machine-learning user intent detection.</li>
+        <li><a href="https://patents.google.com/patent/US10581771B2/en">US 10,581,771 B2</a> and <a href="https://patents.google.com/patent/US11223586B1/en">US 11,223,586 B1</a> - Techniques for a messaging agent platform.</li>
+        <li><a href="https://patents.google.com/patent/US10880237B2/en">US 10,880,237 B2</a> - Methods and systems for ranking messaging bots.</li>
+        <li><a href="https://patents.google.com/patent/US10979371B2/en">US 10,979,371 B2</a> - Techniques for messaging agent messaging interactions.</li>
+        <li><a href="https://patents.google.com/patent/US11349793B2/en">US 11,349,793 B2</a> - Enforcing messaging policies using tags.</li>
+      </ul>
+    </section>
+    <section class="section-skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Product leadership: product strategy, platform strategy, creator tools, community products, social products, learning products, developer ecosystems, product-market discovery.</li>
+        <li>Engineering leadership: engineering management, platform architecture, SDKs, APIs, integrations, technical product direction, hiring, cross-functional execution.</li>
+        <li>Founder work: company formation, early-stage fundraising, product launch, go-to-market, community building, acquisition, post-acquisition integration.</li>
+        <li>Domains: AI-native tools, games, game creation, social gaming, messaging, commerce, community platforms, customer education, social learning.</li>
+        <li>Technical background: web platforms, Messenger Platform, JavaScript SDKs, React/Angular/Node integrations, WordPress integrations, iOS, Objective-C, Swift, analytics systems.</li>
+      </ul>
+    </section>
+    <section class="section-writing-and-public-work">
+      <h2>Writing and Public Work</h2>
+      <ul>
+        <li>"The $197 Billion Industry That Still Builds Like It's 2005" - Medium, 2026.</li>
+        <li>"Messenger Bots: Decision Trees vs Webviews" - Medium, 2017.</li>
+        <li>"How we got PeerBoard to #1 product of the day on Product Hunt" - Indie Hackers, 2020.</li>
+        <li>"Notes on game design" - personal game design blog covering monetization, retention loops, LTV, and analytics.</li>
+        <li>"Why Communities Matter. A Conversation With PeerBoard" - podcast interview on community platforms and Thinkific course communities.</li>
+      </ul>
+    </section>
+    <section class="section-education">
+      <h2>Education</h2>
+      <p>Southern Federal University, formerly Rostov State University - Computer Science / Engineering.</p>
+    </section>
+    <section class="section-additional">
+      <h2>Additional</h2>
+      <ul>
+        <li>Public profiles list Mikhail as an angel investor and startup mentor.</li>
+        <li>Open-source and public code presence under GitHub handle <code>vernon99</code>, including iOS, Messenger, and PeerBoard-related work.</li>
+      </ul>
+    </section>
+    </main>
+  </article>
+</body>
+</html>
